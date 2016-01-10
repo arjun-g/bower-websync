@@ -3,5 +3,5 @@ This is an unofficial repo for distribution of Frozen Mountain's WebSync js libr
 
 ### install
 ```shell
-bower install websync-cli
+bower install websync-client
 ```
