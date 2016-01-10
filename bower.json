@@ -1,0 +1,24 @@
+{
+  "name": "websync-cli",
+  "homepage": "https://github.com/arjun-g/bower-websync",
+  "version": "4.8.8",
+  "authors": [
+    "Arjun Ganesan <arjun@arjun-g.com>"
+  ],
+  "description": "Shim repository for Frozen Mountain's WebSync js libraries",
+  "main": [
+      "fm.js",
+      "fm.websync.js",
+      "fm.websync.chat.js",
+      "fm.websync.returndata.js",
+      "fm.websync.subscribers.js"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "frozen",
+    "mountain",
+    "fm",
+    "websync",
+    "websocket"
+  ]
+}
