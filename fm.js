@@ -1,7 +1,7 @@
 
 /*
  * Title: FM Core for JavaScript
- * Version: 2.8.8
+ * Version: 2.9.1
  * Copyright Frozen Mountain Software 2011+
  */
 
@@ -497,7 +497,7 @@ if (!JSON) {
 }());
 
 fm.getVersion = function() {
-  return '2.8.8';
+  return '2.9.1';
 };
 
 
@@ -13586,6 +13586,14 @@ fm.webSocket = (function(superClass) {
         return this.raiseStreamFailure(args, {
           statusCode: e.code,
           exception: new Error('WebSocket request timed out.')
+        });
+      }
+    } else if (!this._closing) {
+      if (!this._raisedStreamFailure) {
+        this._raisedStreamFailure = true;
+        return this.raiseStreamFailure(args, {
+          statusCode: e.code,
+          exception: new Error('WebSocket closed.')
         });
       }
     }

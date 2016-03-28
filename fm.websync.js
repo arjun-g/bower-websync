@@ -1,7 +1,7 @@
 
 /*
  * Title: WebSync Client for JavaScript
- * Version: 4.8.8
+ * Version: 4.9.1
  * Copyright Frozen Mountain Software 2011+
  */
 
@@ -25,7 +25,7 @@ if (!window.fm) { throw new Error("fm must be loaded before fm.websync."); }
 if (!window.fm.websync) { window.fm.websync = {}; }
 
 fm.websync.getVersion = function() {
-  return '4.8.8';
+  return '4.9.1';
 };
 
 
@@ -18742,7 +18742,7 @@ fm.websync.client = (function(superClass) {
         responseArgs = args2;
         args = new fm.websync.clientDisconnectResponseArgs();
         args.setMethodArgs(disconnectArgs);
-        this.raiseResponseEvent(fm.websync.client._onDisconnectResponse, args, "OnDisonnectResponse", responseArgs);
+        this.raiseResponseEvent(fm.websync.client._onDisconnectResponse, args, "OnDisconnectResponse", responseArgs);
         this.raiseDisconnectComplete(disconnectArgs, responseArgs);
         args4 = new fm.websync.clientDisconnectEndArgs();
         args4.setMethodArgs(disconnectArgs);

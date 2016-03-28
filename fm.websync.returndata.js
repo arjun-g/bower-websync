@@ -1,7 +1,7 @@
 
 /*
  * Title: WebSync Client ReturnData Extension for JavaScript
- * Version: 4.8.8
+ * Version: 4.9.1
  * Copyright Frozen Mountain Software 2011+
  */
 
@@ -27,7 +27,7 @@ if (!window.fm.websync) { throw new Error("fm.websync must be loaded before fm.w
 if (!window.fm.websync.returndata) { window.fm.websync.returndata = {}; }
 
 fm.websync.returndata.getVersion = function() {
-  return '4.8.8';
+  return '4.9.1';
 };
 
 
